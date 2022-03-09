@@ -5,7 +5,7 @@ import static org.testng.Assert.assertEquals;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public abstract class SortingAlgorithmTest<T extends InsertionSort> {
+public abstract class SortingAlgorithmTest<T extends SortingAlgorithm> {
 
   private static final int[] SORTED_ARRAY_EVEN = new int[]{
       Integer.MIN_VALUE, -10000, -1, -1, 0, 0, 1, 1, 10000, Integer.MAX_VALUE};
