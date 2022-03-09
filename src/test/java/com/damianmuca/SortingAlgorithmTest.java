@@ -24,14 +24,12 @@ public abstract class SortingAlgorithmTest<T extends SortingAlgorithm> {
   @Test
   public void sort_shouldReturnSameArray_whenArrayIsEmpty() {
     int[] emptyArray = new int[]{};
-
     assertEquals(sortingAlgorithm.sort(emptyArray), emptyArray);
   }
 
   @Test
   public void sort_shouldReturnSameArray_whenArrayContainsOneElement() {
     int[] oneElementArray = new int[]{10};
-
     assertEquals(sortingAlgorithm.sort(oneElementArray), oneElementArray);
   }
 
