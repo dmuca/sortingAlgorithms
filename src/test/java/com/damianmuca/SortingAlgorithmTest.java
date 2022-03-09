@@ -22,21 +22,21 @@ public abstract class SortingAlgorithmTest<T extends SortingAlgorithm> {
   }
 
   @Test
-  public void sort_shouldReturnInput_whenArrayIsEmpty() {
+  public void sort_shouldReturnSameArray_whenArrayIsEmpty() {
     int[] emptyArray = new int[]{};
 
     assertEquals(sortingAlgorithm.sort(emptyArray), emptyArray);
   }
 
   @Test
-  public void sort_shouldReturnInput_whenArrayContainsOneElement() {
+  public void sort_shouldReturnSameArray_whenArrayContainsOneElement() {
     int[] oneElementArray = new int[]{10};
 
     assertEquals(sortingAlgorithm.sort(oneElementArray), oneElementArray);
   }
 
   @Test
-  public void sort_shouldReturnInput_whenArrayAlreadySorted() {
+  public void sort_shouldReturnSameArray_whenArrayAlreadySorted() {
     int[] sort = sortingAlgorithm.sort(SORTED_ARRAY_EVEN);
     assertEquals(sort, SORTED_ARRAY_EVEN);
   }
