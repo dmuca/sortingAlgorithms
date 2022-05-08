@@ -1,6 +1,6 @@
 package com.damianmuca;
 
-public class MergeSort extends InsertionSort implements SortingAlgorithm {
+public class MergeSort implements SortingAlgorithm {
 
   @Override
   public int[] sort(int[] toSort) {
